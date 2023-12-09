@@ -70,15 +70,7 @@ body {
 }
 
 @media (max-width: 768px) {
-  .header {
-    padding: 72px 24px;
-  }
-  .header__links {
-    display: none;
-  }
-  .hamburger {
-    display: flex;
-  }
+  /* ========== ここに追記してね!!! ==========*/
 }
 
 /* ========== 導入部分のCSS ==========*/
@@ -118,23 +110,7 @@ body {
 }
 
 @media (max-width: 768px) {
-  .intro__text {
-    padding: 0 24px;
-  }
-
-  .intro__image {
-    flex-direction: column-reverse;
-  }
-
-  .intro__image--landscape {
-    width: 100%;
-    height: 200px;
-  }
-
-  .intro__image--portrait {
-    width: 100%;
-    height: 600px;
-  }
+  /* ========== ここに追記してね!!! ==========*/
 }
 
 /* ========== 詳細セクションのCSS ========== */
@@ -222,25 +198,7 @@ body {
 }
 
 @media (max-width: 768px) {
-  .content {
-    margin-top: 140px;
-  }
-
-  .content__concept {
-    padding-right: 8px;
-    margin-top: 56px;
-  }
-
-  .content__concept-split {
-    margin-top: 32px;
-    flex-direction: column;
-    width: 100%;
-    gap: 40px;
-  }
-
-  .content__concept-item {
-    width: 100%;
-  }
+  /* ========== ここに追記してね!!! ==========*/
 }
 
 .content__gallery {
@@ -312,27 +270,7 @@ body {
 }
 
 @media (max-width: 768px) {
-  .next {
-    padding: 0 24px;
-  }
-
-  .next__wrapper {
-    flex-direction: column;
-  }
-
-  .next__text-space {
-    width: 100%;
-  }
-
-  .next__shop-info {
-    margin-top: 4px;
-  }
-
-  .next img {
-    margin-top: 4px;
-    width: 100%;
-    height: 200px;
-  }
+  /* ========== ここに追記してね!!! ==========*/
 }
 
 /*　========== フッターのCSS　========== */
@@ -371,7 +309,5 @@ body {
 }
 
 @media (max-width: 768px) {
-  .footer {
-    padding: 72px 24px;
-  }
+  /* ========== ここに追記してね!!! ==========*/
 }

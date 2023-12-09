@@ -30,10 +30,15 @@ section > p {
 
 .header {
   /* 3行追記が必要！ */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .header ul {
   /* 2行追記が必要！ */
+  display: flex;
+  gap: 10px;
 }
 
 /*
@@ -43,6 +48,10 @@ section > p {
 
 .cards {
   /* 4行追記が必要！ */
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
 .card {
@@ -58,30 +67,31 @@ section > p {
 }
 
 /*
- * Q3. 下の画像と文字のコンテンツをそれぞれ横幅50%で横並びにし、20pxの間隔を開け
+ * Q3. 下の画像と文字のコンテンツをそれぞれ横幅50%で横並びにし、
  *     画面幅が768px以下になったとき縦並びにし横幅100%になるようにしてください。
  */
 
 .contents {
-  /* 2行追加 */
+  display: flex;
+  gap: 20px;
 }
 
 .contents .text {
-  /* 1行追加 */
+  width: 50%;
 }
 
 .contents img {
-  /* 1行追加 */
+  width: 50%;
 }
 
 @media (max-width: 768px) {
   .contents {
-    /* 1行追加 */
+    flex-direction: column;
   }
   .contents .text {
-    /* 1行追加 */
+    width: 100%;
   }
   .contents img {
-    /* 1行追加 */
+    width: 100%;
   }
 }
