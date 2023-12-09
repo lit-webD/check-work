@@ -1,0 +1,313 @@
+/* ==========　リセットCSS　========== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+body {
+  color: #323232;
+  background-color: #f9f7f4;
+  line-height: 1;
+  font-family: Roboto, YuGothic, "游ゴシック体", "Yu Gothic", "游ゴシック",
+    "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo,
+    "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ========== ヘッダーのCSS ========== */
+
+.header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 72px;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 0.3em;
+}
+
+.header__links {
+  display: flex;
+  gap: 30px;
+}
+
+.header__links--item {
+  font-size: 15px;
+  letter-spacing: 0.1em;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.hamburger__line {
+  width: 30px;
+  height: 2px;
+  background-color: #323232;
+}
+
+@media (max-width: 768px) {
+  /* ========== ここに追記してね!!! ==========*/
+}
+
+/* ========== 導入部分のCSS ==========*/
+
+.intro__text {
+  padding: 0 72px;
+}
+
+.intro__text--shop-name {
+  font-size: 32px;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+}
+
+.intro__text--info {
+  font-size: 14px;
+  margin-top: 20px;
+  letter-spacing: 0.1em;
+}
+
+.intro__image {
+  display: flex;
+  gap: 5px;
+  margin-top: 16px;
+}
+
+.intro__image--landscape {
+  width: 75%;
+  height: 500px;
+  object-fit: cover;
+}
+
+.intro__image--portrait {
+  width: 25%;
+  height: 500px;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  /* ========== ここに追記してね!!! ==========*/
+}
+
+/* ========== 詳細セクションのCSS ========== */
+
+.detail {
+  padding-left: 15%;
+  margin-top: 96px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 64px;
+}
+
+.detail--item-label {
+  font-size: 24px;
+  font-weight: 300;
+  letter-spacing: 0.05em;
+}
+
+.detail--item-info {
+  font-size: 15px;
+  margin-top: 16px;
+  color: #787878;
+}
+
+/* ========== コンテンツ部分のCSS ========== */
+
+.content {
+  margin-top: 176px;
+  padding-left: 15%;
+}
+
+.content__tab {
+  display: flex;
+  align-items: flex-end;
+  border-bottom: 1px solid #c3c3c3;
+}
+
+.content__tab--item {
+  cursor: pointer;
+  height: 40px;
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 10px;
+  padding-right: 8px;
+  font-size: 16px;
+  letter-spacing: 0.05em;
+  border-bottom: 0px solid #323232;
+  transition: all 0.3s ease;
+}
+
+.content__tab--item:not(:first-child) {
+  padding-left: 4px;
+}
+
+.content__tab--item.active {
+  font-size: 24px;
+  padding-right: 28px;
+  border-bottom: 2px solid #323232;
+}
+
+.content__concept {
+  margin-top: 80px;
+}
+
+.content__concept-title {
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.content__concept-split {
+  width: 84%;
+  display: flex;
+  margin-top: 48px;
+  gap: 30px;
+}
+
+.content__concept-item {
+  width: 50%;
+  line-height: 1.6;
+  letter-spacing: 0.02em;
+}
+
+.content__concept-item p:not(:first-child) {
+  margin-top: 16px;
+}
+
+@media (max-width: 768px) {
+  /* ========== ここに追記してね!!! ==========*/
+}
+
+.content__gallery {
+  margin-top: 80px;
+  width: 99%;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  transition: all 0.3s ease;
+}
+
+.content__gallery img {
+  width: 100%;
+  aspect-ratio: 2.35 / 1;
+  object-fit: cover;
+}
+
+.none {
+  display: none;
+}
+
+/* ========== 次の記事へのリンクのCSS ========== */
+
+.next {
+  margin-top: 240px;
+  padding: 0 72px;
+}
+
+.next__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.next__text-space {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.next__head {
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+}
+
+.next__shop-name {
+  font-size: 32px;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+}
+
+.next__shop-info {
+  font-size: 14px;
+  margin-top: 14px;
+  letter-spacing: 0.1em;
+}
+
+.next img {
+  width: 50%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+.next:hover img {
+  opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+  /* ========== ここに追記してね!!! ==========*/
+}
+
+/*　========== フッターのCSS　========== */
+.footer {
+  margin-top: 32px;
+  background-color: #3d3935;
+  color: #f9f7f4;
+  padding: 72px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.footer__sns {
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+  gap: 10px;
+}
+
+.footer__sns svg {
+  fill: #f9f7f4;
+  height: 24px;
+}
+
+.footer__top-btn {
+  width: 20px;
+  height: 20px;
+  border-top: 2px solid #f9f7f4;
+  border-right: 2px solid #f9f7f4;
+  transform: rotate(-45deg);
+}
+
+.footer a:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+  /* ========== ここに追記してね!!! ==========*/
+}
