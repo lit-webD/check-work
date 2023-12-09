@@ -1,0 +1,47 @@
+/* ↓↓↓↓名刺の土台部分↓↓↓↓ */
+.paper {
+  background: linear-gradient(to left, #fff 0%, #fff 75%, #000 75%, #000 100%);
+  transform: translateY(-50%) translateX(-50%);
+  /* position:〇〇や位置を調整するプロパティ（top,left...）を使って中央に寄せよう */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  /* 枠線をつけよう */
+  border: 1px solid #000;
+}
+
+/* ↓↓↓↓名刺の中身部分↓↓↓↓ */
+.content {
+  margin: 20px;
+  /* display:〇〇をつかって画像を横並びにしよう！ */
+  display: flex;
+  align-items: center;
+}
+
+.image {
+  /* 横幅を50%に設定しよう */
+  width: 50%;
+}
+
+img {
+  /* 背景を白くしよう */
+  background-color: #fff;
+  /* 画像の角を丸くしよう */
+  border-radius: 50%;
+}
+
+/* ーーーーーーーーこの下から基本設定（いじらなくていいよ）ーーーーーーーー */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgb(202, 202, 202) 1px, transparent 0),
+    linear-gradient(90deg, rgb(202, 202, 202) 1px, transparent 0);
+  background-size: 40px 40px;
+  position: relative;
+}

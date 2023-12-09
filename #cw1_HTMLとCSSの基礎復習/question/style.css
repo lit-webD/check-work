@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.top {
+  background-image: url(img/top.jpg);
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+}
+
+.top h1 {
+  font-family: "Pacifico", cursive;
+  text-align: center;
+  font-size: 5em;
+  padding-top: 120px;
+}
+h2 {
+  text-align: center;
+  font-size: 30px;
+  font-family: "Pacifico", cursive;
+  padding-top: 20px;
+}
+
+section {
+  width: 100vw;
+}
+
+.q1 p {
+  font-family: "Noto Sans JP", sans-serif;
+  padding: 130px;
+  font-weight: normal;
+}
+
+.q2 p {
+  font-family: "Pacifico", cursive;
+}
+
+.q2 img {
+  width: 300px;
+}
+
+.q3 {
+  text-align: center;
+}

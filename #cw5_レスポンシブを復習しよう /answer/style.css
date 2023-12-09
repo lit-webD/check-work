@@ -1,0 +1,97 @@
+/* リセットCSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+}
+/* 関係ないCSS */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+section {
+  margin-top: 150px;
+}
+section > p {
+  margin-bottom: 30px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+/*
+ * Q1. 下のヘッダーの要素とリストを横並びにし、画面端に寄せてください。
+ *     リストには20pxの間隔を開けてください。
+ */
+
+.header {
+  /* 3行追記が必要！ */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header ul {
+  /* 2行追記が必要！ */
+  display: flex;
+  gap: 10px;
+}
+
+/*
+ * Q2. 下のカードを横並びにして、20pxの間隔を開けて、中央に揃えてください。
+ *     画面幅が狭くなったときに、折り返されるようにしてください。
+*/
+
+.cards {
+  /* 4行追記が必要！ */
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 300px;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 4px;
+}
+
+/*
+ * Q3. 下の画像と文字のコンテンツをそれぞれ横幅50%で横並びにし、
+ *     画面幅が768px以下になったとき縦並びにし横幅100%になるようにしてください。
+ */
+
+.contents {
+  display: flex;
+  gap: 20px;
+}
+
+.contents .text {
+  width: 50%;
+}
+
+.contents img {
+  width: 50%;
+}
+
+@media (max-width: 768px) {
+  .contents {
+    flex-direction: column;
+  }
+  .contents .text {
+    width: 100%;
+  }
+  .contents img {
+    width: 100%;
+  }
+}

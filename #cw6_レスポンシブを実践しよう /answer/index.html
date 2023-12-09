@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>checkwork - mediaquery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <p class="logo">FooTPRINTS</p>
+      <nav class="header__nav">
+        <ul class="header__links">
+          <li><a href="#" class="header__links--item">TOP</a></li>
+          <li><a href="#" class="header__links--item">ABOUT</a></li>
+          <li><a href="#" class="header__links--item">WORKS</a></li>
+          <li><a href="#" class="header__links--item">CONTACT</a></li>
+        </ul>
+        <div class="hamburger">
+          <div class="hamburger__line"></div>
+          <div class="hamburger__line"></div>
+          <div class="hamburger__line"></div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="intro">
+        <div class="intro__text">
+          <h1 class="intro__text--shop-name">Ryokusou</h1>
+          <p class="intro__text--info">Cafe / Kyoto Japan / Modern</p>
+        </div>
+        <div class="intro__image">
+          <img src="imgs/landscape.png" class="intro__image--landscape" />
+          <img src="imgs/portrait.png" class="intro__image--portrait" />
+        </div>
+      </section>
+
+      <section class="detail">
+        <div class="detail--item">
+          <p class="detail--item-label">Type</p>
+          <p class="detail--item-info">Modern Cafe</p>
+        </div>
+        <div class="detail--item">
+          <p class="detail--item-label">Price Range</p>
+          <p class="detail--item-info">1000 - 2000 yen</p>
+        </div>
+        <div class="detail--item">
+          <p class="detail--item-label">Opening</p>
+          <p class="detail--item-info">7 . 20. 2021</p>
+        </div>
+        <div class="detail--item">
+          <p class="detail--item-label">Operating Hours</p>
+          <p class="detail--item-info">11:00 - 17:30</p>
+        </div>
+      </section>
+
+      <section class="content">
+        <div class="content__tab">
+          <div class="content__tab--item active" data-tab="concept">
+            <p>Concept</p>
+          </div>
+          <div class="content__tab--item" data-tab="gallery">
+            <p>gallery</p>
+          </div>
+        </div>
+
+        <div class="content__concept content__item">
+          <h2 class="content__concept-title">都会の喧騒から、自然と美味しさへの一歩。</h2>
+          <div class="content__concept-split">
+            <div class="content__concept-item">
+              <p>
+                Ryokusou（緑草）は、都会の喧騒から逃れ、緑豊かなオアシスで心を癒す場所です。私たちのカフェは、自然と現代のシンプルな美しさを融合させ、お客様に穏やかな時間と美味しい料理を提供します。Ryokusouは、日常から一歩抜け出し、リラックスできる場所として、都市生活の中で特別な存在となります。
+              </p>
+              <p>
+                私たちの目標は、お客様が日常のストレスから離れ、自然と調和した場所で心地よい時間を過ごしていただくことです。Ryokusou（緑草）は、新しい体験と美味しい料理が出会う場所で、お越しいただけることを心よりお待ちしております。
+              </p>
+            </div>
+            <div class="content__concept-item">
+              <p>
+                朝、昼、夜、Ryokusouはさまざまなお料理とドリンクを提供しており、新鮮な季節の食材を使用しています。朝食には、オーガニック野菜をたっぷり使ったヘルシーなスムージーや、新鮮なパンとコーヒーがお楽しみいただけます。ランチタイムには、サラダやサンドイッチ、ヘルシーなお弁当が人気です。夜には、ワインやカクテルと共に、シェフ特製の季節のディナーメニューを楽しんでいただけます。
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="content__gallery content__item none">
+          <img src="imgs/landscape.png" alt="">
+          <img src="imgs/landscape.png" alt="">
+          <img src="imgs/landscape.png" alt="">
+          <img src="imgs/landscape.png" alt="">
+        </div>
+      </section>
+
+      <section class="next">
+        <a href="" class="next__wrapper">
+
+          <div class="next__text-space">
+            <p class="next__head">Next footprint</p>
+            <div>
+              <p class="next__shop-name">Komorebi</p>
+              <p class="next__shop-info">Cafe / Nagano / casual</p>
+            </div>
+          </div>
+          <img src="imgs/landscape.png">
+        </section>
+      </a>
+    </main>
+
+    <footer class="footer">
+      <div>
+        <p class="logo">©FooTPRINTS</p>
+        <ul class="footer__sns">
+          <li><a href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg>
+          </a></li>
+          <li><a href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+          </a></li>
+          <li><a href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/></svg>
+          </a></li>
+        </ul>
+      </div>
+      <a href="#top" class="footer__top-btn"></a>
+    </footer>
+  </body>
+</html>

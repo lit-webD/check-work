@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.top {
+  background-image: url(../img/bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.top h1 {
+  font-family: "Pacifico", cursive;
+  text-align: center;
+  font-size: 5em;
+  height: 25vh;
+  padding: 5vh 0;
+}
+
+.img_box {
+  display: flex;
+  padding-left: 50px;
+}
+
+.red_star {
+  height: 70vh;
+}
+
+.orange_star {
+  position: absolute;
+  background-image: url(../img/orange_star.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 18vw;
+  height: 65vh;
+  bottom: 0;
+  right: 18vw;
+}
+
+.green_star {
+  width: 30vw;
+}
+
+.blue_star {
+  background-image: url(../img/blue_star.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 20vw;
+  height: 70vh;
+  margin-top: 5vh;
+}
